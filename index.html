@@ -2,21 +2,77 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faycal El Sayed</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f4ff, #e8f0ff);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 30px 40px;
+      text-align: center;
+      width: 320px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      color: #0056d6;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+      line-height: 1.8;
+      font-size: 0.95em;
+    }
+
+    img {
+      margin-top: 10px;
+      height: 70px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-item {
+      color: #444;
+    }
+  </style>
 </head>
 <body>
 
-  <h2 style="color: blue; font-family: 'Comic Sans MS';">Faycal El Sayed</h2>
-  <ul>
-    <li>6, rue Franck Lloyd Wright</li>
-    <li>78280 Guyancourt</li>
-    <li>06 27 12 63 05</li>
-    <li>Faycal El Sayed</li>
-  </ul>
-
-
-
-  <img src="https://e2c78.fr/wp-content/uploads/2024/04/Image-001-from-Genevois-Informatique.png" height="100" alt="Logo E2C78">
+  <div class="card">
+    <h2>Faycal El Sayed</h2>
+    <ul>
+      <li class="contact-item">6, rue Franck Lloyd Wright</li>
+      <li class="contact-item">78280 Guyancourt</li>
+      <li class="contact-item">📞 06 27 12 63 05</li>
+      <li class="contact-item">✉️ faycal.elsayed@example.com</li>
+    </ul>
+    <img src="https://e2c78.fr/wp-content/uploads/2024/04/Image-001-from-Genevois-Informatique.png" alt="Logo E2C78">
+  </div>
 
 </body>
 </html>
